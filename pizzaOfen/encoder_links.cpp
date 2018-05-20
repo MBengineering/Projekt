@@ -13,8 +13,14 @@ void linkslaufISR() {
 	cli();
 	readPort = PIND & 0xC;
 	if (readPort == B00001100 && linksFlag) {
+		if (encPos > 40) {
 
-		encPos++;
+			encPos = 40;
+		}
+		else {
+
+			encPos++;
+		}
 		linksFlag = 0;
 		rechtsFlag = 0;
 	}

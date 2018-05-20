@@ -39,6 +39,15 @@
     <ClInclude Include="lcd_menue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="max6675_init.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ofen_temp_wahl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ofen_heizvorgang.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="encoder_rechts.cpp">
@@ -57,6 +66,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="lcd_init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="max6675.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="max6675_init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ofen_temp_wahl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ofen_heizvorgang.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

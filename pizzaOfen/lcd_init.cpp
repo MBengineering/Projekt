@@ -12,6 +12,5 @@ void lcdInit() {
 	delay(50);
 	lcd.begin(20, 4);
 	lcd.backlight();
-	Serial.begin(9600);
 }
 

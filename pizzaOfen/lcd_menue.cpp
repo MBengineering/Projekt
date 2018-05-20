@@ -7,22 +7,32 @@
 #include "lcd_menue.h"
 
 extern LiquidCrystal_I2C lcd;
-
 extern bool aktiv;
 extern bool lcd_clear_dummy;
-uint16_t zieltemp = 100;
+extern volatile uint16_t encPos;
+extern double input;
+
 
 void menue() {
 
+
 	if (!aktiv) {
 		
-		lcd.setCursor(1, 0);
+		lcd.setCursor(0, 0);
+		lcd.print("Heizvorgang inaktiv");
+		lcd.setCursor(1, 2);
 		lcd.print("Zieltemperatur :");
-		lcd.setCursor(5, 2);
+		lcd.setCursor(3, 3);
 		lcd.print(">");
-		lcd.setCursor(8, 2);
-		lcd.print(zieltemp);
-		lcd.setCursor(13, 2);
+		lcd.setCursor(7, 3);
+		if (encPos < 10) {
+			lcd.print(" ");
+			lcd.setCursor(8, 3);
+		}
+		lcd.print(encPos * 10);
+		lcd.print((char)223);
+		lcd.print("C");
+		lcd.setCursor(15, 3);
 		lcd.print("<");
 	}
 	else {
@@ -32,13 +42,21 @@ void menue() {
 		lcd.setCursor(1, 2);
 		lcd.print("Soll:");
 		lcd.setCursor(1, 3);
-		lcd.print(zieltemp);
+		if (encPos < 10) {
+			lcd.print(" ");
+			lcd.setCursor(2, 3);
+		}
+		lcd.print(encPos*10);
 		lcd.print((char)223);
 		lcd.print("C");
 		lcd.setCursor(11, 2);
 		lcd.print("Ist:");
 		lcd.setCursor(11, 3);
-		lcd.print(zieltemp);
+		if (input < 100.00) {
+			lcd.print(" ");
+			lcd.setCursor(12, 3);
+		}
+		lcd.print(input);
 		lcd.print((char)223);
 		lcd.print("C");
 	}

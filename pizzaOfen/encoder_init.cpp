@@ -11,14 +11,14 @@
 #define pinLinks  18						//--
 #define pinTaster  2						//Taster
 
-volatile bool aktiv;				// ==true : heizvorgang ; ==false : temperatur wählen
-volatile bool lcd_clear_dummy;		
-volatile uint32_t zeitStempel;		//wann wurde das letzte mal gedrückt?
-uint8_t entprellZeit;				//100ms
+volatile bool aktiv = false;				// ==true : heizvorgang ; ==false : temperatur wählen
+volatile bool lcd_clear_dummy = true;		
+volatile uint32_t zeitStempel;				//wann wurde das letzte mal gedrückt?
+uint8_t entprellZeit;						//100ms
 
 volatile byte rechtsFlag = 0;				//Hilfsvariable zur Auswertung
 volatile byte linksFlag = 0;				//Hilfsvariable zur Auswertung
-volatile uint16_t encPos = 0;				//Laufvariable für Encoder Position
+volatile uint16_t encPos = 1;				//Laufvariable für Encoder Position
 volatile byte readPort = 0;					//Hilfsvariable zur Auswertung
 
 void encoderInit() {

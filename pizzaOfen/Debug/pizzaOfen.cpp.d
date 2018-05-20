@@ -11,8 +11,11 @@ C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\mega_atmega2560\Debug\pizzaO
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/USBAPI.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Arduino.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\variants\mega/pins_arduino.h \
+ C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\mega_atmega2560\Debug\ofen_heizvorgang.h \
+ C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\mega_atmega2560\Debug\ofen_temp_wahl.h \
+ C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\mega_atmega2560\Debug\max6675_init.h \
  C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\mega_atmega2560\Debug\lcd_menue.h \
- C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\mega_atmega2560\Debug\lcd_ofen.h \
+ C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\mega_atmega2560\Debug\lcd_init.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\libraries\Wire\src/Wire.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Stream.h \
  C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\mega_atmega2560\Debug\encoder_taster.h \

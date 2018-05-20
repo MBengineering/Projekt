@@ -7,15 +7,21 @@
 
 extern volatile byte rechtsFlag;				//Hilfsvariable zur Auswertung
 extern volatile byte linksFlag;					//Hilfsvariable zur Auswertung
-extern volatile uint16_t encPos;			//Laufvariable für Encoder Position
+extern volatile uint16_t encPos;				//Laufvariable für Encoder Position
 extern volatile byte readPort;					//Hilfsvariable zur Auswertung
 
 void rechtslaufISR() {
 	cli();
 	readPort = PIND & 0xC;
 	if (readPort == B00001100 && rechtsFlag) {
+		if (encPos <= 1) {
 
-		encPos--;
+			encPos = 1;
+		}
+		else {
+
+			encPos--;
+		}
 		linksFlag = 0;
 		rechtsFlag = 0;
 	}
