@@ -5,9 +5,9 @@
 #include "max6675_init.h"
 #include "max6675.h"
 
-#define thermoDO 12
-#define  thermoCS1 8
-#define  thermoCLK 7
+#define thermoDO 4
+#define  thermoCS 3
+#define  thermoCLK 2
 
-MAX6675 thermocouple1(thermoCLK, thermoCS1, thermoDO);
+MAX6675 thermocouple(thermoCLK, thermoCS, thermoDO);
 
