@@ -1,6 +1,6 @@
-C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\mega_atmega2560\Debug\encoder_rechts.cpp.o: \
- C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\mega_atmega2560\Debug\encoder_rechts.cpp \
- C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\mega_atmega2560\Debug\encoder_rechts.h \
+C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\diecimila_atmega328\Debug\encoder_rechts.cpp.o: \
+ C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\diecimila_atmega328\Debug\encoder_rechts.cpp \
+ C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\diecimila_atmega328\Debug\encoder_rechts.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/arduino.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/binary.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/WCharacter.h \
@@ -11,4 +11,4 @@ C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\mega_atmega2560\Debug\encode
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Printable.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/USBAPI.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Arduino.h \
- C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\variants\mega/pins_arduino.h
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\variants\standard/pins_arduino.h
