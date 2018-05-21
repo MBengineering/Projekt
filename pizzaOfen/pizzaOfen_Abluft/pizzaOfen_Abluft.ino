@@ -6,7 +6,7 @@
 
 extern MAX6675 thermocouple1;
 
-unsigned long zeitStempel=0;
+unsigned long zeitStempel = 0;
 const uint8_t offset = 3;
 
 void setup() {

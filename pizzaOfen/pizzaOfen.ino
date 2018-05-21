@@ -1,3 +1,4 @@
+#include "Doxygen.h"
 #include "ofen_heizvorgang.h"
 #include "ofen_temp_wahl.h"
 #include "max6675_init.h"
@@ -12,11 +13,10 @@
 #include "encoder.h"
 
 extern volatile uint16_t encPos;			//Laufvariable für Encoder Position ; initialisiert in encoder_init.cpp
-extern bool aktiv;
+extern volatile bool aktiv;
 
 uint32_t delayStempel;
 uint16_t deelay = 1000;
-uint16_t test;
 
 
 void setup() {
@@ -25,6 +25,7 @@ void setup() {
 	lcdInit();
 	delayStempel = millis();
 }
+
 
 void loop() {
 	

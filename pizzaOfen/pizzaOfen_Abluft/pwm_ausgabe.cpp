@@ -6,7 +6,7 @@
 
 #define outputPin 6
 
-void pwm_ausgabe(uint8_t input) {
+void pwm_ausgabe(uint16_t input) {
 
 	uint8_t pwmValue;
 

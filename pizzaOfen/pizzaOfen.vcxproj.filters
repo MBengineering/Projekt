@@ -48,6 +48,9 @@
     <ClInclude Include="ofen_heizvorgang.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Doxygen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="encoder_rechts.cpp">
