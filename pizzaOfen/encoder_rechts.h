@@ -3,10 +3,10 @@
 /*************************************************************/
 /**
 *  @file encoder_rechts.h
-*  @brief Praeprozessor Anweisungen und bekanntgabe Funktion
-*  @author Marvin Behrens
+*  @brief Praeprozessor Anweisungen und Bekanntgabe der Funktion
+*  @li restlaufISR()\n\n
 *
-*  @date 20.05.2018 – Implementierung in dieses Projekt
+*  @author Marvin Behrens
 *
 *
 *  @version 1.1

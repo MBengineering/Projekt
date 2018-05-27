@@ -1,6 +1,4 @@
-// 
-// ISR für rechte Drehbewegung
-// 
+/**@file encoder_rechts.cpp */
 
 
 #include "encoder_rechts.h"
@@ -11,27 +9,40 @@ extern volatile byte readPort;					//Hilfsvariable zur Auswertung
 extern volatile uint16_t encPos;			//Laufvariable für Encoder Position
 
 /**
-* @brief TasterISR
+* @file encoder_rechts.cpp
+* @brief Dieses file beinhaltet die rechtslaufISR()
 *
-*  Interrupt Sub Rutine, extern ausgeloest durch Taster des Encoders\n
-*  Sie dient zum aktivieren und deaktivieren des Heizvorganges.\n
-*  Ausserdem loest er beim Umschalten in den aktiven Zustand, oder Deaktivierung,\n
-*  eine Ruecksetzung der LCD Anzeige aus.
-*  Pin2 <- Taster <- GND
+* @date 18.03.2018 - Erstellung des Files
 *
+* @author Marvin Behrens
 *
-*  @date 17.03.2018 - erster erfolgreicher Test dieser Funktion
-*  @date 18.05.2018 - Teil dieses Proejtks
-*
-*
-*  @Bug Keine Bugs der Funktion bekannt. Hardware entprellung von vorteil.
-*
-*  @version 1.0
+* @version 1.0
 */
 
+
+/**
+*
+* Interrupt Sub Rutine zur auswertung des Encoders (rechte drehbewegung). \n
+*
+* @li cli(); sperrt auftretene Interrupts (intern und extern) \n
+~ @li readPort wird mit dem Input Registers des PORTD und einer 12 (C) logisch verundet.
+* @li die erste If (else) Anweisung vergleicht den Zustand des Portes D \n
+*     mit der Bitweisen verundung von einer 12 mit dem rechtsFlag. \n
+*     Dieser schritt ist ausschlaggebend für die Auswertung der Drehrichtung.
+* @li die zweite If (else) Anweisung ist fuer die Eingrenzung der Encoderposition zustaendig.
+* @li sei(); gibt interne und externe Interruts wieder frei.
+*
+* @date 20.05.2018 - erfolgreicher Funktionstest mit Hardware
+*
+* @bug Keine Bugs der Funktion bekannt.
+*
+											*/
+
 void rechtslaufISR() {
+
 	cli();
 	readPort = PIND & 0xC;
+
 	if (readPort == B00001100 && rechtsFlag) {
 		if (encPos <= 1) {
 
@@ -45,7 +56,9 @@ void rechtslaufISR() {
 		rechtsFlag = 0;
 	}
 	else if (readPort == B00000100) linksFlag = 1;
+	
 	sei();
+
 }
 
 

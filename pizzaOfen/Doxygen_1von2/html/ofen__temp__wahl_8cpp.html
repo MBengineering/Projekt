@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Abschluss_Projekt: C:/Users/wörk/Documents/GitHub/Projekt/pizzaOfen/ofen_temp_wahl.cpp File Reference</title>
+<title>Teil1/2: C:/Users/wörk/Documents/GitHub/Projekt/pizzaOfen/ofen_temp_wahl.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Abschluss_Projekt
-   &#160;<span id="projectnumber">1</span>
+   <div id="projectname">Teil1/2
+   &#160;<span id="projectnumber">1.0</span>
    </div>
   </td>
  </tr>
@@ -69,6 +69,9 @@ $(function() {
 <div class="title">ofen_temp_wahl.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Dieses file beinhaltet die <a class="el" href="ofen__temp__wahl_8cpp.html#ad26325846c3fa1256f4b5ae38efc3ba1">Sollwert()</a> Funktion.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="ofen__temp__wahl_8h_source.html">ofen_temp_wahl.h</a>&quot;</code><br />
 </div>
 <p><a href="ofen__temp__wahl_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -76,10 +79,16 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad26325846c3fa1256f4b5ae38efc3ba1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ofen__temp__wahl_8cpp.html#ad26325846c3fa1256f4b5ae38efc3ba1">Sollwert</a> (uint16_t zwAblage)</td></tr>
-<tr class="memdesc:ad26325846c3fa1256f4b5ae38efc3ba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">TasterISR.  <a href="#ad26325846c3fa1256f4b5ae38efc3ba1">More...</a><br /></td></tr>
 <tr class="separator:ad26325846c3fa1256f4b5ae38efc3ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Dieses file beinhaltet die <a class="el" href="ofen__temp__wahl_8cpp.html#ad26325846c3fa1256f4b5ae38efc3ba1">Sollwert()</a> Funktion. </p>
+<dl class="section date"><dt>Date</dt><dd>19.03.2018 - Erstellung des Files</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Marvin Behrens</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="ofen__temp__wahl_8cpp_source.html">ofen_temp_wahl.cpp</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="ad26325846c3fa1256f4b5ae38efc3ba1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad26325846c3fa1256f4b5ae38efc3ba1">&#9670;&nbsp;</a></span>Sollwert()</h2>
 
@@ -95,19 +104,25 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Umrechnung Encoder Position =&gt; Sollwert <br />
+ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">zwAblage</td><td>"zwischen Ablage", Instanziierung der Encoder Position.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Soll- / Zieltemperatur <br />
+<br />
+</dd></dl>
+<p>Dient der Umrechnung der Encoder Position mit dem Faktor 10<br />
+ zur gewuenschten Solltemperatur. Da der der <a class="el" href="class_m_a_x6675.html">MAX6675</a> einen Wert in Gleitkommaarithmetik liefert,<br />
+ wird die integer Variable mit einer Gleitkommazahl verrechnet<br />
+ und als return Wert dem Platzhalter "Sollwert" vom Typ double uebergeben<br />
+</p>
+<dl class="section date"><dt>Date</dt><dd>18.04.2018 - erfolgreicher Funktionstest.</dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000009">Bug:</a></b></dt><dd>Keine Bugs der Funktion bekannt.</dd></dl>
 
-<p>TasterISR. </p>
-<p>Interrupt Sub Rutine, extern ausgeloest durch Taster des Encoders<br />
- Sie dient zum aktivieren und deaktivieren des Heizvorganges.<br />
- Ausserdem loest er beim Umschalten in den aktiven Zustand, oder Deaktivierung,<br />
- eine Ruecksetzung der <a class="el" href="class_l_c_d.html">LCD</a> Anzeige aus. Pin2 &lt;- Taster &lt;- GND</p>
-<dl class="section date"><dt>Date</dt><dd>17.03.2018 - erster erfolgreicher Test dieser Funktion </dd>
-<dd>
-18.05.2018 - Teil dieses Proejtks</dd></dl>
-<p>Keine Bugs der Funktion bekannt. Hardware entprellung von vorteil.</p>
-<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ofen__temp__wahl_8cpp_source.html#l00026">26</a> of file <a class="el" href="ofen__temp__wahl_8cpp_source.html">ofen_temp_wahl.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ofen__temp__wahl_8cpp_source.html#l00039">39</a> of file <a class="el" href="ofen__temp__wahl_8cpp_source.html">ofen_temp_wahl.cpp</a>.</p>
 
 </div>
 </div>

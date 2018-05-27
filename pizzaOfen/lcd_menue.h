@@ -3,10 +3,10 @@
 /*************************************************************/
 /**
 *  @file lcd_menue.h
-*  @brief Praeprozessor Anweisungen und bekanntgabe Funktion
-*  @author Marvin Behrens
+*  @brief Praeprozessor Anweisungen und Bekanntgabe der Funktion
+*  @li menue()\n\n
 *
-*  @date 20.05.2018 – Implementierung in dieses Projekt
+*  @author Marvin Behrens
 *
 *
 *  @version 1.1
@@ -24,4 +24,4 @@
 
 #endif
 
-void menue();
+void menue(double inputMENUE, uint16_t encPosMENUE);

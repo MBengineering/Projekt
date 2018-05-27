@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Abschluss_Projekt: C:/Users/wörk/Documents/GitHub/Projekt/pizzaOfen/lcd_menue.h File Reference</title>
+<title>Teil1/2: C:/Users/wörk/Documents/GitHub/Projekt/pizzaOfen/lcd_menue.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Abschluss_Projekt
-   &#160;<span id="projectnumber">1</span>
+   <div id="projectname">Teil1/2
+   &#160;<span id="projectnumber">1.0</span>
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Praeprozessor Anweisungen und bekanntgabe Funktion.  
+<p>Praeprozessor Anweisungen und Bekanntgabe der Funktion.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;WProgram.h&quot;</code><br />
 </div>
@@ -78,20 +78,23 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac248a09f8f1e9d8c6e7db963fb66dc6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd__menue_8h.html#ac248a09f8f1e9d8c6e7db963fb66dc6a">menue</a> ()</td></tr>
-<tr class="memdesc:ac248a09f8f1e9d8c6e7db963fb66dc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">TasterISR.  <a href="#ac248a09f8f1e9d8c6e7db963fb66dc6a">More...</a><br /></td></tr>
-<tr class="separator:ac248a09f8f1e9d8c6e7db963fb66dc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9abc109a10ac13e6b3124478afe06ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd__menue_8h.html#ad9abc109a10ac13e6b3124478afe06ac">menue</a> (double inputMENUE, uint16_t encPosMENUE)</td></tr>
+<tr class="separator:ad9abc109a10ac13e6b3124478afe06ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Praeprozessor Anweisungen und bekanntgabe Funktion. </p>
-<dl class="section author"><dt>Author</dt><dd>Marvin Behrens</dd></dl>
-<dl class="section date"><dt>Date</dt><dd>20.05.2018 � Implementierung in dieses Projekt</dd></dl>
+<div class="textblock"><p>Praeprozessor Anweisungen und Bekanntgabe der Funktion. </p>
+<ul>
+<li><a class="el" href="lcd__menue_8h.html#ad9abc109a10ac13e6b3124478afe06ac">menue()</a><br />
+<br />
+ <dl class="section author"><dt>Author</dt><dd>Marvin Behrens</dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.1 </dd></dl>
+</li>
+</ul>
 
 <p class="definition">Definition in file <a class="el" href="lcd__menue_8h_source.html">lcd_menue.h</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="ac248a09f8f1e9d8c6e7db963fb66dc6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac248a09f8f1e9d8c6e7db963fb66dc6a">&#9670;&nbsp;</a></span>menue()</h2>
+<a id="ad9abc109a10ac13e6b3124478afe06ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9abc109a10ac13e6b3124478afe06ac">&#9670;&nbsp;</a></span>menue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -99,24 +102,49 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void menue </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>inputMENUE</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>encPosMENUE</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Textausgabe auf dem <a class="el" href="class_l_c_d.html">LCD</a> <br />
+ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputMENUE</td><td>Instanziierung der Ist-Temperatur </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encPosMENUE</td><td>Instanziierung der Encoder Position <br />
+ (welche quasi fuer die Soll- bzw. Zieltemperatur steht <br />
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<ul>
+<li>
+Die erste If (else) Anweisung liest den Betriebszustand aus. <ol>
+<li>
+Sowohl im If{} als auch im Else{} Block, sorgt eine weitere <br />
+ If Anweisung fuer die Ausgabekorrektur <br />
+ der Soll- bzw. Zieltemperatur.&gt; </li>
+</ol>
+</li>
+<li>
+Die letzt Anweisung dient der Textfeldleerung beim <br />
+ wechsel der Betriebszustaende.&gt; </li>
+</ul>
+<dl class="section date"><dt>Date</dt><dd>20.04.2018 - erfolgreicher Funktionstest mit Hardware</dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000006">Bug:</a></b></dt><dd>Keine Bugs der Funktion bekannt.</dd></dl>
 
-<p>TasterISR. </p>
-<p>Interrupt Sub Rutine, extern ausgeloest durch Taster des Encoders<br />
- Sie dient zum aktivieren und deaktivieren des Heizvorganges.<br />
- Ausserdem loest er beim Umschalten in den aktiven Zustand, oder Deaktivierung,<br />
- eine Ruecksetzung der <a class="el" href="class_l_c_d.html">LCD</a> Anzeige aus. Pin2 &lt;- Taster &lt;- GND</p>
-<dl class="section date"><dt>Date</dt><dd>17.03.2018 - erster erfolgreicher Test dieser Funktion </dd>
-<dd>
-18.05.2018 - Teil dieses Proejtks</dd></dl>
-<p>Keine Bugs der Funktion bekannt.</p>
-<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="lcd__menue_8cpp_source.html#l00034">34</a> of file <a class="el" href="lcd__menue_8cpp_source.html">lcd_menue.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lcd__menue_8cpp_source.html#l00054">54</a> of file <a class="el" href="lcd__menue_8cpp_source.html">lcd_menue.cpp</a>.</p>
 
 </div>
 </div>

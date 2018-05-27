@@ -1,37 +1,57 @@
-// 
-// Textausgabe auf dem LCD zum auswähler der Solltemperatur
-// 
-
 #include "LCD.h"
 #include "LiquidCrystal_I2C.h"
 #include "lcd_menue.h"
+#include <Print.h>
 
 extern LiquidCrystal_I2C lcd;
-extern bool aktiv;
-extern bool lcd_clear_dummy;
-extern volatile uint16_t encPos;
-extern double input;
+
+extern volatile bool lcd_clear_dummy;
+extern volatile bool aktiv;
 
 /**
-* @brief TasterISR
+* @file lcd_menue.cpp
+* @brief Dieses file beinhaltet die menue() Funktion.\n
 *
-*  Interrupt Sub Rutine, extern ausgeloest durch Taster des Encoders\n
-*  Sie dient zum aktivieren und deaktivieren des Heizvorganges.\n
-*  Ausserdem loest er beim Umschalten in den aktiven Zustand, oder Deaktivierung,\n
-*  eine Ruecksetzung der LCD Anzeige aus.
-*  Pin2 <- Taster <- GND
+* Benutzte Open Source Funktionen aus dem LCD.h und Print.h :
+* @li void LCD::setCursor(Spalte,Zeile), setzt den Cursor an beliebige stelle.
+* @li sive_t Print::print(Spalte,Zeile), Textausgabe auf dem LCD, "Text" oder Variablen.
 *
+* @date 18.03.2018 - Erstellung des Files
 *
-*  @date 17.03.2018 - erster erfolgreicher Test dieser Funktion
-*  @date 18.05.2018 - Teil dieses Proejtks
+* @author Marvin Behrens
 *
-*
-*  @Bug Keine Bugs der Funktion bekannt.
-*
-*  @version 1.0
+* @version 1.0
 */
 
-void menue() {
+
+/**
+*
+* Textausgabe auf dem LCD \n
+*
+* @param[in] inputMENUE   Instanziierung der Ist-Temperatur
+* @param[in] encPosMENUE  Instanziierung der Encoder Position \n
+*                         (welche quasi fuer die Soll- bzw. Zieltemperatur steht \n
+*
+*
+* <ul>
+*     <li>Die erste If (else) Anweisung liest den Betriebszustand aus.</li>
+*     <ol>
+*       <li>Sowohl im If{} als auch im Else{} Block, sorgt eine weitere  \n
+*			If Anweisung fuer die Ausgabekorrektur \n
+*			der Soll- bzw. Zieltemperatur.>
+*     </ol>
+*	  <li>Die letzt Anweisung dient der Textfeldleerung beim \n
+*		   wechsel der Betriebszustaende.>
+* </ul>
+*
+*
+* @date 20.04.2018 - erfolgreicher Funktionstest mit Hardware
+*
+* @bug Keine Bugs der Funktion bekannt.
+*
+*/
+
+void menue(double inputMENUE, uint16_t encPosMENUE){
 
 
 	if (!aktiv) {
@@ -43,38 +63,38 @@ void menue() {
 		lcd.setCursor(3, 3);
 		lcd.print(">");
 		lcd.setCursor(7, 3);
-		if (encPos < 10) {
+		if (encPosMENUE < 10) {
 			lcd.print(" ");
 			lcd.setCursor(8, 3);
 		}
-		lcd.print(encPos * 10);
+		lcd.print(encPosMENUE * 10);
 		lcd.print((char)223);
 		lcd.print("C");
 		lcd.setCursor(15, 3);
 		lcd.print("<");
 	}
 	else {
-
+		
 		lcd.setCursor(0, 0);
 		lcd.print("Heizvorgang aktiv !");
 		lcd.setCursor(1, 2);
 		lcd.print("Soll:");
 		lcd.setCursor(1, 3);
-		if (encPos < 10) {
+		if (encPosMENUE < 10) {
 			lcd.print(" ");
 			lcd.setCursor(2, 3);
 		}
-		lcd.print(encPos*10);
+		lcd.print(encPosMENUE*10);
 		lcd.print((char)223);
 		lcd.print("C");
 		lcd.setCursor(11, 2);
 		lcd.print("Ist:");
 		lcd.setCursor(11, 3);
-		if (input < 100.00) {
+		if (inputMENUE < 100.00) {
 			lcd.print(" ");
 			lcd.setCursor(12, 3);
 		}
-		lcd.print(input);
+		lcd.print(inputMENUE);
 		lcd.print((char)223);
 		lcd.print("C");
 	}

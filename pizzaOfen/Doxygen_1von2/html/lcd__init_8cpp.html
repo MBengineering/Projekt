@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Abschluss_Projekt: C:/Users/wörk/Documents/GitHub/Projekt/pizzaOfen/lcd_init.cpp File Reference</title>
+<title>Teil1/2: C:/Users/wörk/Documents/GitHub/Projekt/pizzaOfen/lcd_init.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Abschluss_Projekt
-   &#160;<span id="projectnumber">1</span>
+   <div id="projectname">Teil1/2
+   &#160;<span id="projectnumber">1.0</span>
    </div>
   </td>
  </tr>
@@ -70,6 +70,9 @@ $(function() {
 <div class="title">lcd_init.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Dieses file beinhaltet die <a class="el" href="lcd__init_8cpp.html#a3004c9c4fb128520f24f4407dca4f8cf">lcdInit()</a> Funktion.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="lcd__init_8h_source.html">lcd_init.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_l_c_d_8h_source.html">LCD.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_liquid_crystal___i2_c_8h_source.html">LiquidCrystal_I2C.h</a>&quot;</code><br />
@@ -79,15 +82,26 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a3004c9c4fb128520f24f4407dca4f8cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd__init_8cpp.html#a3004c9c4fb128520f24f4407dca4f8cf">lcdInit</a> ()</td></tr>
-<tr class="memdesc:a3004c9c4fb128520f24f4407dca4f8cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">TasterISR.  <a href="#a3004c9c4fb128520f24f4407dca4f8cf">More...</a><br /></td></tr>
 <tr class="separator:a3004c9c4fb128520f24f4407dca4f8cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ae49e1edd5538907c619894ec78bd34bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_liquid_crystal___i2_c.html">LiquidCrystal_I2C</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd__init_8cpp.html#ae49e1edd5538907c619894ec78bd34bc">lcd</a> (0x27, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE)</td></tr>
+<tr class="memdesc:ae49e1edd5538907c619894ec78bd34bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bekanntgabe des vorhandenen <a class="el" href="class_l_c_d.html">LCD</a>, 0x27 ist die fest vergebene I2C Adresse vom Hersteller.  <a href="#ae49e1edd5538907c619894ec78bd34bc">More...</a><br /></td></tr>
 <tr class="separator:ae49e1edd5538907c619894ec78bd34bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Dieses file beinhaltet die <a class="el" href="lcd__init_8cpp.html#a3004c9c4fb128520f24f4407dca4f8cf">lcdInit()</a> Funktion. </p>
+<p>Benutzte Open Source Funktionen aus dem <a class="el" href="_l_c_d_8h.html">LCD.h</a> und <a class="el" href="_liquid_crystal___i2_c_8h.html">LiquidCrystal_I2C.h</a> : </p><ul>
+<li>void <a class="el" href="class_liquid_crystal___i2_c.html#a740cfc267b3736222f19316b28a96901">LiquidCrystal_I2C::begin()</a> </li>
+<li>void <a class="el" href="class_l_c_d.html#ad5c585aec4e033c875204e40d39ab9ab">LCD::backlight()</a></li>
+</ul>
+<dl class="section date"><dt>Date</dt><dd>18.03.2018 - Erstellung des Files</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Marvin Behrens</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="lcd__init_8cpp_source.html">lcd_init.cpp</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a3004c9c4fb128520f24f4407dca4f8cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3004c9c4fb128520f24f4407dca4f8cf">&#9670;&nbsp;</a></span>lcdInit()</h2>
 
@@ -102,19 +116,26 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Funktion zum Initialisieren des <a class="el" href="class_l_c_d.html">LCD</a><br />
+ </p><ul>
+<li>
+Der lcd.begin() Funktion gibt man zwei Parameter mit : <ol>
+<li>
+Anzahl der vorhanden Spalten des <a class="el" href="class_l_c_d.html">LCD</a>, hier 20 </li>
+<li>
+Anzahl der vorhanden Zeilen des <a class="el" href="class_l_c_d.html">LCD</a>, hier 4 </li>
+</ol>
+</li>
+</ul>
+<ul>
+<li>Des weiteren schaltet lcd.backlight() die Hintergrundbeleuchtung des <a class="el" href="class_l_c_d.html">LCD</a> ein. <br />
+<br />
+<dl class="section date"><dt>Date</dt><dd>20.04.2018 - erfolgreicher Funktionstest mit Hardware</dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000005">Bug:</a></b></dt><dd>Keine Bugs der Funktion bekannt.</dd></dl>
+</li>
+</ul>
 
-<p>TasterISR. </p>
-<p>Interrupt Sub Rutine, extern ausgeloest durch Taster des Encoders<br />
- Sie dient zum aktivieren und deaktivieren des Heizvorganges.<br />
- Ausserdem loest er beim Umschalten in den aktiven Zustand, oder Deaktivierung,<br />
- eine Ruecksetzung der <a class="el" href="class_l_c_d.html">LCD</a> Anzeige aus. Pin2 &lt;- Taster &lt;- GND</p>
-<dl class="section date"><dt>Date</dt><dd>17.03.2018 - erster erfolgreicher Test dieser Funktion </dd>
-<dd>
-18.05.2018 - Teil dieses Proejtks</dd></dl>
-<p>Keine Bugs der Funktion bekannt. Hardware entprellung von vorteil.</p>
-<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="lcd__init_8cpp_source.html#l00029">29</a> of file <a class="el" href="lcd__init_8cpp_source.html">lcd_init.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lcd__init_8cpp_source.html#l00043">43</a> of file <a class="el" href="lcd__init_8cpp_source.html">lcd_init.cpp</a>.</p>
 
 </div>
 </div>
@@ -130,6 +151,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Bekanntgabe des vorhandenen <a class="el" href="class_l_c_d.html">LCD</a>, 0x27 ist die fest vergebene I2C Adresse vom Hersteller. </p>
 
 </div>
 </div>

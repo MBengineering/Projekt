@@ -1,35 +1,49 @@
-// 
-// 
-// 
 #include "lcd_init.h"
 #include "LCD.h"
 #include "LiquidCrystal_I2C.h"
 
+/** \brief Bekanntgabe des vorhandenen LCD, 0x27 ist die fest vergebene I2C Adresse vom Hersteller. */
 LiquidCrystal_I2C lcd(0x27, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE);
 
 /**
-* @brief TasterISR
+* @file lcd_init.cpp
+* @brief Dieses file beinhaltet die lcdInit() Funktion
 *
-*  Interrupt Sub Rutine, extern ausgeloest durch Taster des Encoders\n
-*  Sie dient zum aktivieren und deaktivieren des Heizvorganges.\n
-*  Ausserdem loest er beim Umschalten in den aktiven Zustand, oder Deaktivierung,\n
-*  eine Ruecksetzung der LCD Anzeige aus.
-*  Pin2 <- Taster <- GND
+* Benutzte Open Source Funktionen aus dem LCD.h und LiquidCrystal_I2C.h :
+* @li void LiquidCrystal_I2C::begin()
+* @li void LCD::backlight()
 *
+* @date 18.03.2018 - Erstellung des Files
 *
-*  @date 17.03.2018 - erster erfolgreicher Test dieser Funktion
-*  @date 18.05.2018 - Teil dieses Proejtks
+* @author Marvin Behrens
 *
+* @version 1.0
+*/
+
+
+/**
 *
-*  @Bug Keine Bugs der Funktion bekannt. Hardware entprellung von vorteil.
+* Funktion zum Initialisieren des LCD\n
 *
-*  @version 1.0
+* <ul>
+*     <li>Der lcd.begin() Funktion gibt man zwei Parameter mit :</li>
+*     <ol>
+*       <li>Anzahl der vorhanden Spalten des LCD, hier 20</li>
+*       <li>Anzahl der vorhanden Zeilen des LCD, hier 4</li>
+*     </ol>
+* </ul>
+* @li Des weiteren schaltet lcd.backlight() die Hintergrundbeleuchtung des LCD ein. \n
+* \n
+* @date 20.04.2018 - erfolgreicher Funktionstest mit Hardware
+*
+* @bug Keine Bugs der Funktion bekannt.
+*
 */
 
 void lcdInit() {
 	
-	delay(50);
 	lcd.begin(20, 4);
 	lcd.backlight();
+	delay(50);
 }
 

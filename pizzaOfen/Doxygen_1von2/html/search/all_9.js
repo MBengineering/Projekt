@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['lcd',['LCD',['../class_l_c_d.html',1,'LCD'],['../class_l_c_d.html#aa27059b8a9940642b4d1ff8a95e3ade8',1,'LCD::LCD()'],['../encoder__taster_8cpp.html#a0b3886fc5d22cd9c3db5f0da7b01a2ce',1,'lcd():&#160;encoder_taster.cpp'],['../lcd__init_8cpp.html#ae49e1edd5538907c619894ec78bd34bc',1,'lcd():&#160;lcd_init.cpp'],['../lcd__menue_8cpp.html#a0b3886fc5d22cd9c3db5f0da7b01a2ce',1,'lcd():&#160;lcd_menue.cpp']]],
+  ['lcd',['LCD',['../class_l_c_d.html',1,'LCD'],['../class_l_c_d.html#aa27059b8a9940642b4d1ff8a95e3ade8',1,'LCD::LCD()'],['../lcd__init_8cpp.html#ae49e1edd5538907c619894ec78bd34bc',1,'lcd():&#160;lcd_init.cpp'],['../lcd__menue_8cpp.html#a0b3886fc5d22cd9c3db5f0da7b01a2ce',1,'lcd():&#160;lcd_menue.cpp']]],
   ['lcd_2ecpp',['LCD.cpp',['../_l_c_d_8cpp.html',1,'']]],
   ['lcd_2eh',['LCD.h',['../_l_c_d_8h.html',1,'']]],
   ['lcd_5f1line',['LCD_1LINE',['../_l_c_d_8h.html#a8c85cf88d8af66a47c42249d81c94641',1,'LCD.h']]],
@@ -12,7 +12,7 @@ var searchData=
   ['lcd_5fbacklight',['LCD_BACKLIGHT',['../_liquid_crystal___i2_c_8cpp.html#ac059d24dfe9c1e1f7c07cb7869a1833b',1,'LiquidCrystal_I2C.cpp']]],
   ['lcd_5fblinkoff',['LCD_BLINKOFF',['../_l_c_d_8h.html#a4b28243034cec656b0ed490ba6979752',1,'LCD.h']]],
   ['lcd_5fblinkon',['LCD_BLINKON',['../_l_c_d_8h.html#ac3b19d4e6553b9bbf18a23387e439206',1,'LCD.h']]],
-  ['lcd_5fclear_5fdummy',['lcd_clear_dummy',['../encoder__init_8cpp.html#a71b06f2b5df3347ad1c7e76728da3c49',1,'lcd_clear_dummy():&#160;encoder_init.cpp'],['../encoder__taster_8cpp.html#a71b06f2b5df3347ad1c7e76728da3c49',1,'lcd_clear_dummy():&#160;encoder_init.cpp'],['../lcd__menue_8cpp.html#aa048eb1fb42a048336913e027615d338',1,'lcd_clear_dummy():&#160;encoder_init.cpp']]],
+  ['lcd_5fclear_5fdummy',['lcd_clear_dummy',['../encoder__init_8cpp.html#a71b06f2b5df3347ad1c7e76728da3c49',1,'lcd_clear_dummy():&#160;pizzaOfen.ino'],['../encoder__taster_8cpp.html#a71b06f2b5df3347ad1c7e76728da3c49',1,'lcd_clear_dummy():&#160;pizzaOfen.ino'],['../lcd__menue_8cpp.html#a71b06f2b5df3347ad1c7e76728da3c49',1,'lcd_clear_dummy():&#160;pizzaOfen.ino'],['../pizza_ofen_8ino.html#a71b06f2b5df3347ad1c7e76728da3c49',1,'lcd_clear_dummy():&#160;pizzaOfen.ino']]],
   ['lcd_5fcleardisplay',['LCD_CLEARDISPLAY',['../_l_c_d_8h.html#acc3509bc0442b41e2b816555de473ed2',1,'LCD.h']]],
   ['lcd_5fcursormove',['LCD_CURSORMOVE',['../_l_c_d_8h.html#ac21f0302ac4136775877d5f4759e4f74',1,'LCD.h']]],
   ['lcd_5fcursoroff',['LCD_CURSOROFF',['../_l_c_d_8h.html#a32b194a3adaa0a0bb69acee2e6a754fa',1,'LCD.h']]],
@@ -44,5 +44,6 @@ var searchData=
   ['linkslaufisr',['linkslaufISR',['../encoder__links_8cpp.html#af4952352adbf3dbf2d8f40cfe1702e6d',1,'linkslaufISR():&#160;encoder_links.cpp'],['../encoder__links_8h.html#af4952352adbf3dbf2d8f40cfe1702e6d',1,'linkslaufISR():&#160;encoder_links.cpp']]],
   ['liquidcrystal_5fi2c',['LiquidCrystal_I2C',['../class_liquid_crystal___i2_c.html',1,'LiquidCrystal_I2C'],['../class_liquid_crystal___i2_c.html#a629e1b026fbc810b7bb462e07856e87d',1,'LiquidCrystal_I2C::LiquidCrystal_I2C(uint8_t lcd_Addr)'],['../class_liquid_crystal___i2_c.html#a0e6d717788a0ca2be44677a2c37d6030',1,'LiquidCrystal_I2C::LiquidCrystal_I2C(uint8_t lcd_Addr, uint8_t backlighPin, t_backlighPol pol)'],['../class_liquid_crystal___i2_c.html#a96467796fec0c335389f3a1766cc08d2',1,'LiquidCrystal_I2C::LiquidCrystal_I2C(uint8_t lcd_Addr, uint8_t En, uint8_t Rw, uint8_t Rs)'],['../class_liquid_crystal___i2_c.html#a6aa43a947f77934a8bd9bf5e032f19ce',1,'LiquidCrystal_I2C::LiquidCrystal_I2C(uint8_t lcd_Addr, uint8_t En, uint8_t Rw, uint8_t Rs, uint8_t backlighPin, t_backlighPol pol)'],['../class_liquid_crystal___i2_c.html#a2184a935ee89f73e8459af223828ff48',1,'LiquidCrystal_I2C::LiquidCrystal_I2C(uint8_t lcd_Addr, uint8_t En, uint8_t Rw, uint8_t Rs, uint8_t d4, uint8_t d5, uint8_t d6, uint8_t d7)'],['../class_liquid_crystal___i2_c.html#a154e8b23c768821b0bd865f62e55ff88',1,'LiquidCrystal_I2C::LiquidCrystal_I2C(uint8_t lcd_Addr, uint8_t En, uint8_t Rw, uint8_t Rs, uint8_t d4, uint8_t d5, uint8_t d6, uint8_t d7, uint8_t backlighPin, t_backlighPol pol)']]],
   ['liquidcrystal_5fi2c_2ecpp',['LiquidCrystal_I2C.cpp',['../_liquid_crystal___i2_c_8cpp.html',1,'']]],
-  ['liquidcrystal_5fi2c_2eh',['LiquidCrystal_I2C.h',['../_liquid_crystal___i2_c_8h.html',1,'']]]
+  ['liquidcrystal_5fi2c_2eh',['LiquidCrystal_I2C.h',['../_liquid_crystal___i2_c_8h.html',1,'']]],
+  ['loop',['loop',['../pizza_ofen_8ino.html#afe461d27b9c48d5921c00d521181f12f',1,'pizzaOfen.ino']]]
 ];

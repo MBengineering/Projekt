@@ -1,4 +1,4 @@
-C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\diecimila_atmega328\Debug\NewliquidCrystal\SI2CIO.cpp.o: \
+C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\mega_atmega2560\Debug\NewliquidCrystal\SI2CIO.cpp.o: \
  C:\Users\wörk\Documents\Arduino\libraries\NewliquidCrystal\SI2CIO.cpp \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Arduino.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/binary.h \
@@ -10,6 +10,6 @@ C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\diecimila_atmega328\Debug\Ne
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Printable.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/USBAPI.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Arduino.h \
- C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\variants\standard/pins_arduino.h \
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\variants\mega/pins_arduino.h \
  C:\Users\wörk\Documents\Arduino\libraries\NewliquidCrystal\SI2CIO.h \
  C:\Users\wörk\Documents\Arduino\libraries\NewliquidCrystal\SoftI2CMaster.h

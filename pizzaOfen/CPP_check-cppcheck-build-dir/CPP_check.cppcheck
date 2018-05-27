@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="1">
+    <builddir>CPP_check-cppcheck-build-dir</builddir>
+    <platform>Unspecified</platform>
+    <analyze-all-vs-configs>true</analyze-all-vs-configs>
+    <paths>
+        <dir name="C:/Users/wörk/Documents/GitHub/Projekt/pizzaOfen"/>
+        <dir name="pizzaOfen_Abluft"/>
+        <dir name="C:/Users/wörk/Documents/GitHub/Projekt/pizzaOfen"/>
+    </paths>
+    <libraries>
+        <library>avr</library>
+        <library>embedded_sql</library>
+    </libraries>
+</project>

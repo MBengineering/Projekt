@@ -1,4 +1,4 @@
-C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\diecimila_atmega328\Debug\core\USBCore.cpp.o: \
+C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\mega_atmega2560\Debug\core\USBCore.cpp.o: \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\USBCore.cpp \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\USBAPI.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\Arduino.h \
@@ -9,5 +9,5 @@ C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\diecimila_atmega328\Debug\co
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\Stream.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\Print.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\Printable.h \
- C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\variants\standard/pins_arduino.h \
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\variants\mega/pins_arduino.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\PluggableUSB.h

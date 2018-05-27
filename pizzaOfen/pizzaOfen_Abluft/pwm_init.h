@@ -1,5 +1,14 @@
-// pwm_init.h
-
+/*************************************************************/
+/**
+*  @file pwm_init.h
+*  @brief Praeprozessor Anweisungen und Bekanntgabe der Funktion
+*  @li pwm_init()\n\n
+*
+*  @author Marvin Behrens
+*
+*
+*  @version 1.1
+*************************************************************/
 #ifndef _PWM_INIT_h
 #define _PWM_INIT_h
 

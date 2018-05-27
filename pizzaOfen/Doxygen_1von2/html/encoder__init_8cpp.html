@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Abschluss_Projekt: C:/Users/wÃ¶rk/Documents/GitHub/Projekt/pizzaOfen/encoder_init.cpp File Reference</title>
+<title>Teil1/2: C:/Users/wÃ¶rk/Documents/GitHub/Projekt/pizzaOfen/encoder_init.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Abschluss_Projekt
-   &#160;<span id="projectnumber">1</span>
+   <div id="projectname">Teil1/2
+   &#160;<span id="projectnumber">1.0</span>
    </div>
   </td>
  </tr>
@@ -71,6 +71,9 @@ $(function() {
 <div class="title">encoder_init.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Dieses file beinhaltet die <a class="el" href="encoder__init_8cpp.html#a48fd6688718259767764c5008cf14768">encoderInit()</a> Funktion.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="encoder__init_8h_source.html">encoder_init.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="encoder__links_8h_source.html">encoder_links.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="encoder__rechts_8h_source.html">encoder_rechts.h</a>&quot;</code><br />
@@ -80,11 +83,11 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a05cfac96883434494f899beea99cca23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encoder__init_8cpp.html#a05cfac96883434494f899beea99cca23">pinRechts</a>&#160;&#160;&#160;19</td></tr>
+<tr class="memitem:a05cfac96883434494f899beea99cca23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encoder__init_8cpp.html#a05cfac96883434494f899beea99cca23">pinRechts</a>&#160;&#160;&#160;PD3</td></tr>
 <tr class="separator:a05cfac96883434494f899beea99cca23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada6e30f6bc3299254c18a688e7cc0af7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encoder__init_8cpp.html#ada6e30f6bc3299254c18a688e7cc0af7">pinLinks</a>&#160;&#160;&#160;18</td></tr>
+<tr class="memitem:ada6e30f6bc3299254c18a688e7cc0af7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encoder__init_8cpp.html#ada6e30f6bc3299254c18a688e7cc0af7">pinLinks</a>&#160;&#160;&#160;PD2</td></tr>
 <tr class="separator:ada6e30f6bc3299254c18a688e7cc0af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a0469ed87fd6dd3635b5bc9e3a06834"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encoder__init_8cpp.html#a4a0469ed87fd6dd3635b5bc9e3a06834">pinTaster</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memitem:a4a0469ed87fd6dd3635b5bc9e3a06834"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encoder__init_8cpp.html#a4a0469ed87fd6dd3635b5bc9e3a06834">pinTaster</a>&#160;&#160;&#160;PE4</td></tr>
 <tr class="separator:a4a0469ed87fd6dd3635b5bc9e3a06834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -94,24 +97,43 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a533eff87ba866d16cbcb9669eecb3138"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encoder__init_8cpp.html#a533eff87ba866d16cbcb9669eecb3138">aktiv</a></td></tr>
-<tr class="separator:a533eff87ba866d16cbcb9669eecb3138"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71b06f2b5df3347ad1c7e76728da3c49"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encoder__init_8cpp.html#a71b06f2b5df3347ad1c7e76728da3c49">lcd_clear_dummy</a></td></tr>
+<tr class="memdesc:a71b06f2b5df3347ad1c7e76728da3c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Steht fuer eine Anforderung der Textfeldleerung des <a class="el" href="class_l_c_d.html">LCD</a> zur verfuegung.  <a href="#a71b06f2b5df3347ad1c7e76728da3c49">More...</a><br /></td></tr>
 <tr class="separator:a71b06f2b5df3347ad1c7e76728da3c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14a3473a308a87fe96474b4852a58791"><td class="memItemLeft" align="right" valign="top">volatile uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encoder__init_8cpp.html#a14a3473a308a87fe96474b4852a58791">zeitStempel</a></td></tr>
-<tr class="separator:a14a3473a308a87fe96474b4852a58791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5aaf04ce4830c7c7d85d9ed412502d3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encoder__init_8cpp.html#aa5aaf04ce4830c7c7d85d9ed412502d3">entprellZeit</a></td></tr>
-<tr class="separator:aa5aaf04ce4830c7c7d85d9ed412502d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a533eff87ba866d16cbcb9669eecb3138"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encoder__init_8cpp.html#a533eff87ba866d16cbcb9669eecb3138">aktiv</a></td></tr>
+<tr class="memdesc:a533eff87ba866d16cbcb9669eecb3138"><td class="mdescLeft">&#160;</td><td class="mdescRight">Betriebszustand, true == aktive heizelemente , false == Temperaturwahl.  <a href="#a533eff87ba866d16cbcb9669eecb3138">More...</a><br /></td></tr>
+<tr class="separator:a533eff87ba866d16cbcb9669eecb3138"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8b4db01c0bb0ed4ccaeca65461c0f2e"><td class="memItemLeft" align="right" valign="top">volatile byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encoder__init_8cpp.html#af8b4db01c0bb0ed4ccaeca65461c0f2e">rechtsFlag</a></td></tr>
+<tr class="memdesc:af8b4db01c0bb0ed4ccaeca65461c0f2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dient der Auswertung des Dreh Encoders.  <a href="#af8b4db01c0bb0ed4ccaeca65461c0f2e">More...</a><br /></td></tr>
 <tr class="separator:af8b4db01c0bb0ed4ccaeca65461c0f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e3153eb448f685bdcf21b3f0b327835"><td class="memItemLeft" align="right" valign="top">volatile byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encoder__init_8cpp.html#a4e3153eb448f685bdcf21b3f0b327835">linksFlag</a></td></tr>
+<tr class="memdesc:a4e3153eb448f685bdcf21b3f0b327835"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dient der Auswertung des Dreh Encoders.  <a href="#a4e3153eb448f685bdcf21b3f0b327835">More...</a><br /></td></tr>
 <tr class="separator:a4e3153eb448f685bdcf21b3f0b327835"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04705c8dea0d7623e2f3140d4039608c"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encoder__init_8cpp.html#a04705c8dea0d7623e2f3140d4039608c">encPos</a></td></tr>
+<tr class="memdesc:a04705c8dea0d7623e2f3140d4039608c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktuelle Position; 0-65635.  <a href="#a04705c8dea0d7623e2f3140d4039608c">More...</a><br /></td></tr>
 <tr class="separator:a04705c8dea0d7623e2f3140d4039608c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96bba9843f540813e87635f81aa97045"><td class="memItemLeft" align="right" valign="top">volatile byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encoder__init_8cpp.html#a96bba9843f540813e87635f81aa97045">readPort</a></td></tr>
+<tr class="memdesc:a96bba9843f540813e87635f81aa97045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zum Abfragen des Zustandes an PORTD.  <a href="#a96bba9843f540813e87635f81aa97045">More...</a><br /></td></tr>
 <tr class="separator:a96bba9843f540813e87635f81aa97045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf27b5ff55fc3f16e21463d9a746c055"><td class="memItemLeft" align="right" valign="top">uint32_t volatile&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encoder__init_8cpp.html#acf27b5ff55fc3f16e21463d9a746c055">zeitStempel</a></td></tr>
+<tr class="memdesc:acf27b5ff55fc3f16e21463d9a746c055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zeit des letzten Aufrufes der tasterPressedISR.  <a href="#acf27b5ff55fc3f16e21463d9a746c055">More...</a><br /></td></tr>
+<tr class="separator:acf27b5ff55fc3f16e21463d9a746c055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Dieses file beinhaltet die <a class="el" href="encoder__init_8cpp.html#a48fd6688718259767764c5008cf14768">encoderInit()</a> Funktion. </p>
+<p>Verwendung einer Funktion aus Open Source Quelle zum initialisieren<br />
+der Interrupt Rutinen. attachinterrupt(). Dieser Aufruf bekommt 3 Parameter mitgegeben: <br />
+</p><ul>
+<li>digitalPinToInterrupt(Pin) - Gewuenschter Pin . </li>
+<li>Name der ISR, sozusagen die Hinsprung Adresse. </li>
+<li>Art der Detecktion, steigende/fallende Flanke.</li>
+</ul>
+<dl class="section date"><dt>Date</dt><dd>17.03.2018 - Erstellung des Files</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Marvin Behrens</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ada6e30f6bc3299254c18a688e7cc0af7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada6e30f6bc3299254c18a688e7cc0af7">&#9670;&nbsp;</a></span>pinLinks</h2>
 
@@ -119,12 +141,13 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define pinLinks&#160;&#160;&#160;18</td>
+          <td class="memname">#define pinLinks&#160;&#160;&#160;PD2</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Pin zur detektierung linker Umdrehungsimpulse </p>
 
-<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00011">11</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00016">16</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
 
 </div>
 </div>
@@ -135,10 +158,11 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define pinRechts&#160;&#160;&#160;19</td>
+          <td class="memname">#define pinRechts&#160;&#160;&#160;PD3</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Pin zur detektierung rechter Umdrehungsimpulse </p>
 
 <p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00010">10</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
 
@@ -151,12 +175,13 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define pinTaster&#160;&#160;&#160;2</td>
+          <td class="memname">#define pinTaster&#160;&#160;&#160;PE4</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Pin des Tasters </p>
 
-<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00012">12</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00022">22</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
 
 </div>
 </div>
@@ -175,8 +200,23 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Bekanntgabe der hinsprung-Adressen und <br />
+Initialisierung der benötigten Variablen der Interrupt Sub Rutinen : <br />
+</p><ul>
+<li><a class="el" href="encoder__rechts_8cpp.html#aa0b53edc0fa35a32fdddc3ec754732db">rechtslaufISR()</a> </li>
+<li><a class="el" href="encoder__links_8cpp.html#af4952352adbf3dbf2d8f40cfe1702e6d">linkslaufISR()</a> </li>
+<li><a class="el" href="encoder__taster_8cpp.html#af5fea2a2ccdb8d02b6dae0ea90a48219">tasterPressedISR()</a></li>
+</ul>
+<p>Ausserdem werden für die Pins, des Encoders, speziefische konfigurationen gewählt: <br />
+</p><ul>
+<li>INPUT </li>
+<li>PULL-UP (Widerstand) </li>
+<li>detektion der steigenden Flanke</li>
+</ul>
+<dl class="section date"><dt>Date</dt><dd>20.04.2018 - erfolgreicher Funktionstest mit Hardware</dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug:</a></b></dt><dd>Keine Bugs der Funktion bekannt.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00024">24</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00073">73</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
 
 </div>
 </div>
@@ -193,7 +233,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00014">14</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
+<p>Betriebszustand, true == aktive heizelemente , false == Temperaturwahl. </p>
+
+<p class="definition">Definition at line <a class="el" href="pizza_ofen_8ino_source.html#l00050">50</a> of file <a class="el" href="pizza_ofen_8ino_source.html">pizzaOfen.ino</a>.</p>
 
 </div>
 </div>
@@ -209,23 +251,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00021">21</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
+<p>Aktuelle Position; 0-65635. </p>
 
-</div>
-</div>
-<a id="aa5aaf04ce4830c7c7d85d9ed412502d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5aaf04ce4830c7c7d85d9ed412502d3">&#9670;&nbsp;</a></span>entprellZeit</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t entprellZeit</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00017">17</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00031">31</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
 
 </div>
 </div>
@@ -241,7 +269,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00015">15</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
+<p>Steht fuer eine Anforderung der Textfeldleerung des <a class="el" href="class_l_c_d.html">LCD</a> zur verfuegung. </p>
+
+<p class="definition">Definition at line <a class="el" href="pizza_ofen_8ino_source.html#l00053">53</a> of file <a class="el" href="pizza_ofen_8ino_source.html">pizzaOfen.ino</a>.</p>
 
 </div>
 </div>
@@ -257,7 +287,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00020">20</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
+<p>Dient der Auswertung des Dreh Encoders. </p>
+
+<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00029">29</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
 
 </div>
 </div>
@@ -273,7 +305,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00022">22</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
+<p>Zum Abfragen des Zustandes an PORTD. </p>
+
+<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00033">33</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
 
 </div>
 </div>
@@ -289,23 +323,27 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00019">19</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
+<p>Dient der Auswertung des Dreh Encoders. </p>
+
+<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00027">27</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a14a3473a308a87fe96474b4852a58791"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14a3473a308a87fe96474b4852a58791">&#9670;&nbsp;</a></span>zeitStempel</h2>
+<a id="acf27b5ff55fc3f16e21463d9a746c055"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf27b5ff55fc3f16e21463d9a746c055">&#9670;&nbsp;</a></span>zeitStempel</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile uint32_t zeitStempel</td>
+          <td class="memname">uint32_t volatile zeitStempel</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00016">16</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
+<p>Zeit des letzten Aufrufes der tasterPressedISR. </p>
+
+<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00035">35</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
 
 </div>
 </div>
