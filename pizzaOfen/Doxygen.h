@@ -1,20 +1,17 @@
 // Doxygen.h
 /** @mainpage Mainpage
 *
-*  @section sec1 Einleitung
-*  Hier folgt eine kurze Einleitung...
+*  @section sec1 Temperaturregelung des Ofens und Human-User-Interface.
+*  
+*	
 *
 * 
-*  @subsection sec2_1 Projekt	: Temperatur - / Luefterregelung anhand eines Ofenmodells\n\n
-*  @subsection sec2_2 Betreuer	: Herr Jankowski - Tepe, Staatliche Technikerschule Berlin\n
+*  @subsection sec2_1 Projekt	: Temperatur - / Luefterregelung anhand eines Ofenmodells\n
+\n
+\n
+*  @subsection sec2_2 Betreuer	: Herr Jankowski - Tepe, Staatliche Technikerschule Berlin
 */
 
-/** Darstellung von Listen.
-*
-*  Einfache Listen:
-*  @li @Input
-*  @li @Output
-*/
 
 #ifndef _DOXYGEN_h
 #define _DOXYGEN_h

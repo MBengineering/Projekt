@@ -3,10 +3,11 @@
 /*************************************************************/
 /**
 *  @file lcd_init.h
-*  @brief Praeprozessor Anweisungen und bekanntgabe Funktion
+*  @brief Praeprozessor Anweisungen und Bekanntgabe der Funktion
+*  @li lcdInit()\n\n
+*
 *  @author Marvin Behrens
 *
-*  @date 20.05.2018 – Implementierung in dieses Projekt
 *
 *
 *  @version 1.1
@@ -25,4 +26,3 @@
 #endif
 
 void lcdInit();
-void menue();

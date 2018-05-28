@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Abschluss_Projekt: C:/Users/wörk/Documents/GitHub/Projekt/pizzaOfen/lcd_menue.cpp File Reference</title>
+<title>Teil1/2: C:/Users/wörk/Documents/GitHub/Projekt/pizzaOfen/lcd_menue.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Abschluss_Projekt
-   &#160;<span id="projectnumber">1</span>
+   <div id="projectname">Teil1/2
+   &#160;<span id="projectnumber">1.0</span>
    </div>
   </td>
  </tr>
@@ -70,34 +70,49 @@ $(function() {
 <div class="title">lcd_menue.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Dieses file beinhaltet die <a class="el" href="lcd__menue_8cpp.html#ad9abc109a10ac13e6b3124478afe06ac">menue()</a> Funktion.<br />
+.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_l_c_d_8h_source.html">LCD.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_liquid_crystal___i2_c_8h_source.html">LiquidCrystal_I2C.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="lcd__menue_8h_source.html">lcd_menue.h</a>&quot;</code><br />
+<code>#include &lt;Print.h&gt;</code><br />
 </div>
 <p><a href="lcd__menue_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac248a09f8f1e9d8c6e7db963fb66dc6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd__menue_8cpp.html#ac248a09f8f1e9d8c6e7db963fb66dc6a">menue</a> ()</td></tr>
-<tr class="memdesc:ac248a09f8f1e9d8c6e7db963fb66dc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">TasterISR.  <a href="#ac248a09f8f1e9d8c6e7db963fb66dc6a">More...</a><br /></td></tr>
-<tr class="separator:ac248a09f8f1e9d8c6e7db963fb66dc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9abc109a10ac13e6b3124478afe06ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd__menue_8cpp.html#ad9abc109a10ac13e6b3124478afe06ac">menue</a> (double inputMENUE, uint16_t encPosMENUE)</td></tr>
+<tr class="separator:ad9abc109a10ac13e6b3124478afe06ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a0b3886fc5d22cd9c3db5f0da7b01a2ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_liquid_crystal___i2_c.html">LiquidCrystal_I2C</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd__menue_8cpp.html#a0b3886fc5d22cd9c3db5f0da7b01a2ce">lcd</a></td></tr>
+<tr class="memdesc:a0b3886fc5d22cd9c3db5f0da7b01a2ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bekanntgabe des vorhandenen <a class="el" href="class_l_c_d.html">LCD</a>, 0x27 ist die fest vergebene I2C Adresse vom Hersteller.  <a href="#a0b3886fc5d22cd9c3db5f0da7b01a2ce">More...</a><br /></td></tr>
 <tr class="separator:a0b3886fc5d22cd9c3db5f0da7b01a2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbe221e90ca4993ee680c0d327fae6c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd__menue_8cpp.html#afbe221e90ca4993ee680c0d327fae6c6">aktiv</a></td></tr>
-<tr class="separator:afbe221e90ca4993ee680c0d327fae6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa048eb1fb42a048336913e027615d338"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd__menue_8cpp.html#aa048eb1fb42a048336913e027615d338">lcd_clear_dummy</a></td></tr>
-<tr class="separator:aa048eb1fb42a048336913e027615d338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04705c8dea0d7623e2f3140d4039608c"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd__menue_8cpp.html#a04705c8dea0d7623e2f3140d4039608c">encPos</a></td></tr>
-<tr class="separator:a04705c8dea0d7623e2f3140d4039608c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c157053a753f43ecf81ac021877a1bb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd__menue_8cpp.html#a7c157053a753f43ecf81ac021877a1bb">input</a></td></tr>
-<tr class="separator:a7c157053a753f43ecf81ac021877a1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b06f2b5df3347ad1c7e76728da3c49"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd__menue_8cpp.html#a71b06f2b5df3347ad1c7e76728da3c49">lcd_clear_dummy</a></td></tr>
+<tr class="memdesc:a71b06f2b5df3347ad1c7e76728da3c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Steht fuer eine Anforderung der Textfeldleerung des <a class="el" href="class_l_c_d.html">LCD</a> zur verfuegung.  <a href="#a71b06f2b5df3347ad1c7e76728da3c49">More...</a><br /></td></tr>
+<tr class="separator:a71b06f2b5df3347ad1c7e76728da3c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a533eff87ba866d16cbcb9669eecb3138"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd__menue_8cpp.html#a533eff87ba866d16cbcb9669eecb3138">aktiv</a></td></tr>
+<tr class="memdesc:a533eff87ba866d16cbcb9669eecb3138"><td class="mdescLeft">&#160;</td><td class="mdescRight">Betriebszustand, true == aktive heizelemente , false == Temperaturwahl.  <a href="#a533eff87ba866d16cbcb9669eecb3138">More...</a><br /></td></tr>
+<tr class="separator:a533eff87ba866d16cbcb9669eecb3138"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ac248a09f8f1e9d8c6e7db963fb66dc6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac248a09f8f1e9d8c6e7db963fb66dc6a">&#9670;&nbsp;</a></span>menue()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Dieses file beinhaltet die <a class="el" href="lcd__menue_8cpp.html#ad9abc109a10ac13e6b3124478afe06ac">menue()</a> Funktion.<br />
+. </p>
+<p>Benutzte Open Source Funktionen aus dem <a class="el" href="_l_c_d_8h.html">LCD.h</a> und Print.h : </p><ul>
+<li>void LCD::setCursor(Spalte,Zeile), setzt den Cursor an beliebige stelle. </li>
+<li>sive_t Print::print(Spalte,Zeile), Textausgabe auf dem <a class="el" href="class_l_c_d.html">LCD</a>, "Text" oder Variablen.</li>
+</ul>
+<dl class="section date"><dt>Date</dt><dd>18.03.2018 - Erstellung des Files</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Marvin Behrens</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="lcd__menue_8cpp_source.html">lcd_menue.cpp</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="ad9abc109a10ac13e6b3124478afe06ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9abc109a10ac13e6b3124478afe06ac">&#9670;&nbsp;</a></span>menue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -105,73 +120,68 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void menue </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>inputMENUE</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>encPosMENUE</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Textausgabe auf dem <a class="el" href="class_l_c_d.html">LCD</a> <br />
+ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputMENUE</td><td>Instanziierung der Ist-Temperatur </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encPosMENUE</td><td>Instanziierung der Encoder Position <br />
+ (welche quasi fuer die Soll- bzw. Zieltemperatur steht <br />
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<ul>
+<li>
+Die erste If (else) Anweisung liest den Betriebszustand aus. <ol>
+<li>
+Sowohl im If{} als auch im Else{} Block, sorgt eine weitere <br />
+ If Anweisung fuer die Ausgabekorrektur <br />
+ der Soll- bzw. Zieltemperatur.&gt; </li>
+</ol>
+</li>
+<li>
+Die letzt Anweisung dient der Textfeldleerung beim <br />
+ wechsel der Betriebszustaende.&gt; </li>
+</ul>
+<dl class="section date"><dt>Date</dt><dd>20.04.2018 - erfolgreicher Funktionstest mit Hardware</dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000006">Bug:</a></b></dt><dd>Keine Bugs der Funktion bekannt.</dd></dl>
 
-<p>TasterISR. </p>
-<p>Interrupt Sub Rutine, extern ausgeloest durch Taster des Encoders<br />
- Sie dient zum aktivieren und deaktivieren des Heizvorganges.<br />
- Ausserdem loest er beim Umschalten in den aktiven Zustand, oder Deaktivierung,<br />
- eine Ruecksetzung der <a class="el" href="class_l_c_d.html">LCD</a> Anzeige aus. Pin2 &lt;- Taster &lt;- GND</p>
-<dl class="section date"><dt>Date</dt><dd>17.03.2018 - erster erfolgreicher Test dieser Funktion </dd>
-<dd>
-18.05.2018 - Teil dieses Proejtks</dd></dl>
-<p>Keine Bugs der Funktion bekannt.</p>
-<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="lcd__menue_8cpp_source.html#l00034">34</a> of file <a class="el" href="lcd__menue_8cpp_source.html">lcd_menue.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lcd__menue_8cpp_source.html#l00054">54</a> of file <a class="el" href="lcd__menue_8cpp_source.html">lcd_menue.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="afbe221e90ca4993ee680c0d327fae6c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbe221e90ca4993ee680c0d327fae6c6">&#9670;&nbsp;</a></span>aktiv</h2>
+<a id="a533eff87ba866d16cbcb9669eecb3138"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a533eff87ba866d16cbcb9669eecb3138">&#9670;&nbsp;</a></span>aktiv</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool aktiv</td>
+          <td class="memname">volatile bool aktiv</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00014">14</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
+<p>Betriebszustand, true == aktive heizelemente , false == Temperaturwahl. </p>
 
-</div>
-</div>
-<a id="a04705c8dea0d7623e2f3140d4039608c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04705c8dea0d7623e2f3140d4039608c">&#9670;&nbsp;</a></span>encPos</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile uint16_t encPos</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00021">21</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a7c157053a753f43ecf81ac021877a1bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c157053a753f43ecf81ac021877a1bb">&#9670;&nbsp;</a></span>input</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double input</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ofen__heizvorgang_8cpp_source.html#l00017">17</a> of file <a class="el" href="ofen__heizvorgang_8cpp_source.html">ofen_heizvorgang.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pizza_ofen_8ino_source.html#l00050">50</a> of file <a class="el" href="pizza_ofen_8ino_source.html">pizzaOfen.ino</a>.</p>
 
 </div>
 </div>
@@ -187,21 +197,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Bekanntgabe des vorhandenen <a class="el" href="class_l_c_d.html">LCD</a>, 0x27 ist die fest vergebene I2C Adresse vom Hersteller. </p>
+
 </div>
 </div>
-<a id="aa048eb1fb42a048336913e027615d338"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa048eb1fb42a048336913e027615d338">&#9670;&nbsp;</a></span>lcd_clear_dummy</h2>
+<a id="a71b06f2b5df3347ad1c7e76728da3c49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71b06f2b5df3347ad1c7e76728da3c49">&#9670;&nbsp;</a></span>lcd_clear_dummy</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool lcd_clear_dummy</td>
+          <td class="memname">volatile bool lcd_clear_dummy</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00015">15</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
+<p>Steht fuer eine Anforderung der Textfeldleerung des <a class="el" href="class_l_c_d.html">LCD</a> zur verfuegung. </p>
+
+<p class="definition">Definition at line <a class="el" href="pizza_ofen_8ino_source.html#l00053">53</a> of file <a class="el" href="pizza_ofen_8ino_source.html">pizzaOfen.ino</a>.</p>
 
 </div>
 </div>

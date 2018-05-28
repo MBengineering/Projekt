@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Abschluss_Projekt: C:/Users/wörk/Documents/GitHub/Projekt/pizzaOfen/ofen_heizvorgang.h File Reference</title>
+<title>Teil1/2: C:/Users/wörk/Documents/GitHub/Projekt/pizzaOfen/ofen_heizvorgang.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Abschluss_Projekt
-   &#160;<span id="projectnumber">1</span>
+   <div id="projectname">Teil1/2
+   &#160;<span id="projectnumber">1.0</span>
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Praeprozessor Anweisungen und bekanntgabe Funktion.  
+<p>Praeprozessor Anweisungen und Bekanntgabe der Funktion.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;WProgram.h&quot;</code><br />
 </div>
@@ -78,20 +78,23 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9d2d211a607e82b5a8d9a4226f2f25bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ofen__heizvorgang_8h.html#a9d2d211a607e82b5a8d9a4226f2f25bb">heizvorgang</a> ()</td></tr>
-<tr class="memdesc:a9d2d211a607e82b5a8d9a4226f2f25bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">TasterISR.  <a href="#a9d2d211a607e82b5a8d9a4226f2f25bb">More...</a><br /></td></tr>
-<tr class="separator:a9d2d211a607e82b5a8d9a4226f2f25bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a2ceba2db6757ac3c5229b2002b1ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ofen__heizvorgang_8h.html#aa4a2ceba2db6757ac3c5229b2002b1ff">heizvorgang</a> (double inputHEIZEN, uint16_t encPosHEIZEN)</td></tr>
+<tr class="separator:aa4a2ceba2db6757ac3c5229b2002b1ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Praeprozessor Anweisungen und bekanntgabe Funktion. </p>
-<dl class="section author"><dt>Author</dt><dd>Marvin Behrens</dd></dl>
-<dl class="section date"><dt>Date</dt><dd>20.05.2018 � Implementierung in dieses Projekt</dd></dl>
+<div class="textblock"><p>Praeprozessor Anweisungen und Bekanntgabe der Funktion. </p>
+<ul>
+<li><a class="el" href="ofen__heizvorgang_8h.html#aa4a2ceba2db6757ac3c5229b2002b1ff">heizvorgang()</a><br />
+<br />
+ <dl class="section author"><dt>Author</dt><dd>Marvin Behrens</dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.1 </dd></dl>
+</li>
+</ul>
 
 <p class="definition">Definition in file <a class="el" href="ofen__heizvorgang_8h_source.html">ofen_heizvorgang.h</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a9d2d211a607e82b5a8d9a4226f2f25bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d2d211a607e82b5a8d9a4226f2f25bb">&#9670;&nbsp;</a></span>heizvorgang()</h2>
+<a id="aa4a2ceba2db6757ac3c5229b2002b1ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4a2ceba2db6757ac3c5229b2002b1ff">&#9670;&nbsp;</a></span>heizvorgang()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -99,24 +102,54 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void heizvorgang </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>inputHEIZEN</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>encPosHEIZEN</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>TasterISR. </p>
-<p>Interrupt Sub Rutine, extern ausgeloest durch Taster des Encoders<br />
- Sie dient zum aktivieren und deaktivieren des Heizvorganges.<br />
- Ausserdem loest er beim Umschalten in den aktiven Zustand, oder Deaktivierung,<br />
- eine Ruecksetzung der <a class="el" href="class_l_c_d.html">LCD</a> Anzeige aus. Pin2 &lt;- Taster &lt;- GND</p>
-<dl class="section date"><dt>Date</dt><dd>17.03.2018 - erster erfolgreicher Test dieser Funktion </dd>
+<p>Textausgabe auf dem <a class="el" href="class_l_c_d.html">LCD</a> <br />
+ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputHEIZEN</td><td>Instanziierung der Ist-Temperatur</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encPosMENUE</td><td>Instanziierung der Encoder Position <br />
+ (Welche quasi fuer die Soll- bzw. Zieltemperatur steht<br />
+ </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">init</td><td>Dient der einmaligen konfiguration der Relais-Pins.<br />
+ </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">obereGrenze</td><td>Beim ueberschreiten dieser Temperatur werden die Relais abgeschaltet.<br />
+ </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">untereGrenze</td><td>Beim unterschreiten dieser Temperatur werden die Relais zugeschaltet.<br />
+ </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname"><a class="el" href="ofen__temp__wahl_8cpp.html#ad26325846c3fa1256f4b5ae38efc3ba1">Sollwert()</a></td><td>extern =&gt; <a class="el" href="ofen__temp__wahl_8cpp.html" title="Dieses file beinhaltet die Sollwert() Funktion. ">ofen_temp_wahl.cpp</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Es erfolgt eine kalibrierung des kritischen Temperaturbereichs. In der letzten If (else) Anweisung wird sowohl der MIN- als auch<br />
+ MAX-Wert des Bereichs staendig mit der Ist-Temperatur verglichen. Nach diesen Vergleichen erfolgt eine entsprechende Bit Maskierungs<br />
+ Operation um eine zu- oder abschaltung der Relais zu erzielen.</p>
+<ul>
+<li>(1&lt;&lt;n) schiebt eine 1 an Stelle n eines Bytes. </li>
+<li>~ invertiert die Maske . (Aus 00001000 wird 11110111) </li>
+<li>&amp; PORTn wird mit Maske Bitweise verUNDET. </li>
+<li>| PORTn wird mit Maske Bitweise verODERT.</li>
+</ul>
+<dl class="section date"><dt>Date</dt><dd>20.04.2018 - erfolgreicher Funktionstest mit signal LEDs anstelle der Relais. </dd>
 <dd>
-18.05.2018 - Teil dieses Proejtks</dd></dl>
-<p>Keine Bugs der Funktion bekannt. Hardware entprellung von vorteil.</p>
-<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+25.04.2018 - erfolgreicher Funktionstest mit Relais.</dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000007">Bug:</a></b></dt><dd>Keine Bugs der Funktion bekannt.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ofen__heizvorgang_8cpp_source.html#l00040">40</a> of file <a class="el" href="ofen__heizvorgang_8cpp_source.html">ofen_heizvorgang.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ofen__heizvorgang_8cpp_source.html#l00066">66</a> of file <a class="el" href="ofen__heizvorgang_8cpp_source.html">ofen_heizvorgang.cpp</a>.</p>
 
 </div>
 </div>

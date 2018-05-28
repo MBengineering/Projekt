@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Abschluss_Projekt: C:/Users/wörk/Documents/GitHub/Projekt/pizzaOfen/encoder_taster.h File Reference</title>
+<title>Teil1/2: C:/Users/wörk/Documents/GitHub/Projekt/pizzaOfen/encoder_taster.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Abschluss_Projekt
-   &#160;<span id="projectnumber">1</span>
+   <div id="projectname">Teil1/2
+   &#160;<span id="projectnumber">1.0</span>
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Praeprozessor Anweisungen und bekanntgabe Funktion.  
+<p>Praeprozessor Anweisungen und Bekanntgabe der Funktion.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;WProgram.h&quot;</code><br />
 </div>
@@ -79,14 +79,17 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:af5fea2a2ccdb8d02b6dae0ea90a48219"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encoder__taster_8h.html#af5fea2a2ccdb8d02b6dae0ea90a48219">tasterPressedISR</a> ()</td></tr>
-<tr class="memdesc:af5fea2a2ccdb8d02b6dae0ea90a48219"><td class="mdescLeft">&#160;</td><td class="mdescRight">TasterISR.  <a href="#af5fea2a2ccdb8d02b6dae0ea90a48219">More...</a><br /></td></tr>
 <tr class="separator:af5fea2a2ccdb8d02b6dae0ea90a48219"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Praeprozessor Anweisungen und bekanntgabe Funktion. </p>
-<dl class="section author"><dt>Author</dt><dd>Marvin Behrens</dd></dl>
-<dl class="section date"><dt>Date</dt><dd>20.05.2018 � Implementierung in dieses Projekt</dd></dl>
+<div class="textblock"><p>Praeprozessor Anweisungen und Bekanntgabe der Funktion. </p>
+<ul>
+<li><a class="el" href="encoder__taster_8h.html#af5fea2a2ccdb8d02b6dae0ea90a48219">tasterPressedISR()</a><br />
+<br />
+ <dl class="section author"><dt>Author</dt><dd>Marvin Behrens</dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.1 </dd></dl>
+</li>
+</ul>
 
 <p class="definition">Definition in file <a class="el" href="encoder__taster_8h_source.html">encoder_taster.h</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -104,19 +107,37 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">zeitStempel</td><td>die Zeit des letzten Aufrufes der <a class="el" href="encoder__taster_8cpp.html#af5fea2a2ccdb8d02b6dae0ea90a48219">tasterPressedISR()</a>.<br />
+</td></tr>
+    <tr><td class="paramname">lcd_clear_dummy</td><td>(extern) bei true == leerung des <a class="el" href="class_l_c_d.html">LCD</a> angefordert.<br />
+</td></tr>
+    <tr><td class="paramname">aktiv(extern)</td><td>bei true == Heizvorgang aktiv.<br />
+</td></tr>
+    <tr><td class="paramname">entprellZeit</td><td>==&gt; defines</td></tr>
+  </table>
+  </dd>
+</dl>
+<ul>
+<li>Die erste if Anweisung dient zur softwaremaessigen Entprellung des Tasters. Sie <br />
+fragt ob die Differenz der aktuelle Zeit subtrahiert durch die Zeit <br />
+des letzten aufrufes groesser ist als die fest definierte Entprellungszeit <br />
+von 100ms.<br />
+</li>
+<li>Die zweite if (else) Anweisung ist fuer das toggeln der Variable aktiv zustaendig.<br />
+</li>
+<li>Die dritte if Anweisung Setzt die Variable, welche zur Anforderung einer<br />
+Textfeldleerung dient.<br />
+</li>
+<li>Durch den Befehl cli() werden Interrupts unterdrueckt/gesperrt und durch sei() <br />
+wie freigegeben.<br />
+ <dl class="section date"><dt>Date</dt><dd>20.04.2018 - erfolgreicher Funktionstest mit Hardware</dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000004">Bug:</a></b></dt><dd>Keine Bugs der Funktion bekannt. Hardware entprellung von vorteil.</dd></dl>
+</li>
+</ul>
 
-<p>TasterISR. </p>
-<p>Interrupt Sub Rutine, extern ausgeloest durch Taster des Encoders<br />
- Sie dient zum aktivieren und deaktivieren des Heizvorganges.<br />
- Ausserdem loest er beim Umschalten in den aktiven Zustand, oder Deaktivierung,<br />
- eine Ruecksetzung der <a class="el" href="class_l_c_d.html">LCD</a> Anzeige aus. Pin2 &lt;- Taster &lt;- GND</p>
-<dl class="section date"><dt>Date</dt><dd>17.03.2018 - erster erfolgreicher Test dieser Funktion </dd>
-<dd>
-18.05.2018 - Teil dieses Proejtks</dd></dl>
-<p>Keine Bugs der Funktion bekannt. Hardware entprellung von vorteil.</p>
-<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="encoder__taster_8cpp_source.html#l00034">34</a> of file <a class="el" href="encoder__taster_8cpp_source.html">encoder_taster.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="encoder__taster_8cpp_source.html#l00049">49</a> of file <a class="el" href="encoder__taster_8cpp_source.html">encoder_taster.cpp</a>.</p>
 
 </div>
 </div>

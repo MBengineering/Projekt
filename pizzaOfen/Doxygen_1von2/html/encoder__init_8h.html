@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Abschluss_Projekt: C:/Users/wÃ¶rk/Documents/GitHub/Projekt/pizzaOfen/encoder_init.h File Reference</title>
+<title>Teil1/2: C:/Users/wÃ¶rk/Documents/GitHub/Projekt/pizzaOfen/encoder_init.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Abschluss_Projekt
-   &#160;<span id="projectnumber">1</span>
+   <div id="projectname">Teil1/2
+   &#160;<span id="projectnumber">1.0</span>
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Praeprozessor Anweisungen und bekanntgabe Funktion.  
+<p>Praeprozessor Anweisungen und Bekanntgabe der Funktion.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;WProgram.h&quot;</code><br />
 </div>
@@ -82,10 +82,14 @@ Functions</h2></td></tr>
 <tr class="separator:a48fd6688718259767764c5008cf14768"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Praeprozessor Anweisungen und bekanntgabe Funktion. </p>
-<dl class="section author"><dt>Author</dt><dd>Marvin Behrens</dd></dl>
-<dl class="section date"><dt>Date</dt><dd>20.05.2018 – Implementierung in dieses Projekt</dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.1 </dd></dl>
+<div class="textblock"><p>Praeprozessor Anweisungen und Bekanntgabe der Funktion. </p>
+<ul>
+<li><a class="el" href="encoder__init_8h.html#a48fd6688718259767764c5008cf14768">encoderInit()</a><br />
+<br />
+ <dl class="section author"><dt>Author</dt><dd>Marvin Behrens</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+</li>
+</ul>
 
 <p class="definition">Definition in file <a class="el" href="encoder__init_8h_source.html">encoder_init.h</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -103,8 +107,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Bekanntgabe der hinsprung-Adressen und <br />
+Initialisierung der benötigten Variablen der Interrupt Sub Rutinen : <br />
+</p><ul>
+<li><a class="el" href="encoder__rechts_8cpp.html#aa0b53edc0fa35a32fdddc3ec754732db">rechtslaufISR()</a> </li>
+<li><a class="el" href="encoder__links_8cpp.html#af4952352adbf3dbf2d8f40cfe1702e6d">linkslaufISR()</a> </li>
+<li><a class="el" href="encoder__taster_8cpp.html#af5fea2a2ccdb8d02b6dae0ea90a48219">tasterPressedISR()</a></li>
+</ul>
+<p>Ausserdem werden für die Pins, des Encoders, speziefische konfigurationen gewählt: <br />
+</p><ul>
+<li>INPUT </li>
+<li>PULL-UP (Widerstand) </li>
+<li>detektion der steigenden Flanke</li>
+</ul>
+<dl class="section date"><dt>Date</dt><dd>20.04.2018 - erfolgreicher Funktionstest mit Hardware</dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug:</a></b></dt><dd>Keine Bugs der Funktion bekannt.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00024">24</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="encoder__init_8cpp_source.html#l00073">73</a> of file <a class="el" href="encoder__init_8cpp_source.html">encoder_init.cpp</a>.</p>
 
 </div>
 </div>

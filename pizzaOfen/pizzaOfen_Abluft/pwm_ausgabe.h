@@ -1,5 +1,17 @@
 // pwm_ausgabe.h
 
+/*************************************************************/
+/**
+*  @file pwm_ausgabe.h
+*  @brief Praeprozessor Anweisungen und Bekanntgabe der Funktion
+*  @li pwm_ausgabe\n\n
+*
+*  @author Marvin Behrens
+*
+*
+*  @version 1.1
+*************************************************************/
+
 #ifndef _PWM_AUSGABE_h
 #define _PWM_AUSGABE_h
 

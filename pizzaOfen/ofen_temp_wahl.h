@@ -3,10 +3,10 @@
 /*************************************************************/
 /**
 *  @file ofen_temp_wahl.h
-*  @brief Praeprozessor Anweisungen und bekanntgabe Funktion
-*  @author Marvin Behrens
+*  @brief Praeprozessor Anweisungen und Bekanntgabe der Funktion
+*  @li Sollwer()\n\n
 *
-*  @date 20.05.2018 – Implementierung in dieses Projekt
+*  @author Marvin Behrens
 *
 *
 *  @version 1.1

@@ -3,10 +3,11 @@
 /*************************************************************/
 /**
 *  @file encoder_taster.h
-*  @brief Praeprozessor Anweisungen und bekanntgabe Funktion
+*  @brief Praeprozessor Anweisungen und Bekanntgabe der Funktion
+*  @li tasterPressedISR()\n\n
+*
 *  @author Marvin Behrens
 *
-*  @date 20.05.2018 – Implementierung in dieses Projekt
 *
 *
 *  @version 1.1

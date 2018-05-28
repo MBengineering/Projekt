@@ -1,4 +1,4 @@
-C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\diecimila_atmega328\Debug\NewliquidCrystal\LiquidCrystal_SR1W.cpp.o: \
+C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\mega_atmega2560\Debug\NewliquidCrystal\LiquidCrystal_SR1W.cpp.o: \
  C:\Users\wörk\Documents\Arduino\libraries\NewliquidCrystal\LiquidCrystal_SR1W.cpp \
  C:\Users\wörk\Documents\Arduino\libraries\NewliquidCrystal\LiquidCrystal_SR1W.h \
  C:\Users\wörk\Documents\Arduino\libraries\NewliquidCrystal\LCD.h \
@@ -12,6 +12,6 @@ C:\Users\wörk\AppData\Local\Temp\VMBuilds\pizzaOfen\diecimila_atmega328\Debug\Ne
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Printable.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/USBAPI.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Arduino.h \
- C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\variants\standard/pins_arduino.h \
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\variants\mega/pins_arduino.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Print.h \
  C:\Users\wörk\Documents\Arduino\libraries\NewliquidCrystal\FastIO.h
